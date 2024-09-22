@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
 
 * {
   margin: 0;
@@ -13,80 +12,99 @@ body {
   font-family: "SUSE";
   background-color: #f7eeee;
 }
-nav{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 0 0 10px #00000080;
-    background-color: #ffffff;
+#page-1 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
-.hamburger{
-    display: none;
-    font-size: 24px;
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  padding: 20px;
+  box-shadow: 0 0 10px #00000080;
+  background-color: #ffffff;
 }
-.logo{
-font-size: 2.5vw;
-font-weight: 700;
-text-transform: uppercase;
+.hamburger {
+  display: none;
+  font-size: 24px;
 }
-.logo > a{
-    text-decoration: none;
-    color: #000000;
+.logo {
+  font-size: 2.5vw;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-ul{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 20px;
-font-size: 1.5vw;
-font-weight: 700;
-text-transform: uppercase;
+.logo > a {
+  text-decoration: none;
+  color: #000000;
 }
-ul > li{
-    list-style: none;
-
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.5vw;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-ul > li > a{
-    text-decoration: none;
-    color: #000;
-    transition: all .4s;
+ul > li {
+  list-style: none;
 }
-ul > li > a:hover, .utility > a:hover{
-    color: rgb(171, 147, 115);
+ul > li > a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.4s;
 }
-.utility{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+ul > li > a:hover,
+.utility > a:hover {
+  color: rgb(171, 147, 115);
 }
-.utility > a{
-text-decoration: none;
-color: #000;
-font-size: 1.7vw;
+.utility {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.utility > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.7vw;
 }
 @media screen and (max-width: 600px) {
-    .hamburger{
-        display: inline;
-    }
-    .logo{
-        font-size: 20px;
-    }
-    ul {
-      display: none;
-    }
-    .utility > a{
-        font-size: 20px;
-    }
+  .hamburger {
+    display: inline;
   }
-  /* navigation complete */
+  .logo {
+    font-size: 20px;
+  }
+  ul {
+    display: none;
+  }
+  .utility > a {
+    font-size: 20px;
+  }
+}
+/* navigation complete */
 
-  .hero{
-    width: 100%;
-    background-image: url(Group_1_d4369b6d-0a82-42f3-aba3-d35afecf87ec.webp);
-  }
+.hero {
+  margin: auto;
+  width: 100%;
+  height: 87vh;
+}
+.hero > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.quote {
+  width: 50vw;
+  margin: 5% auto;
+  font-size: 1.8vw;
+  text-align-last: center;
+}

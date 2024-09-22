@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "SUSE";
+  background-color: #f7eeee;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px #00000080;
+    background-color: #ffffff;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+}
+.logo{
+font-size: 2.5vw;
+font-weight: 700;
+text-transform: uppercase;
+}
+.logo > a{
+    text-decoration: none;
+    color: #000000;
+}
+ul{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+font-size: 1.5vw;
+font-weight: 700;
+text-transform: uppercase;
+}
+ul > li{
+    list-style: none;
+
+}
+ul > li > a{
+    text-decoration: none;
+    color: #000;
+    transition: all .4s;
+}
+ul > li > a:hover, .utility > a:hover{
+    color: rgb(171, 147, 115);
+}
+.utility{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.utility > a{
+text-decoration: none;
+color: #000;
+font-size: 1.7vw;
+}
+@media screen and (max-width: 600px) {
+    .hamburger{
+        display: inline;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    ul {
+      display: none;
+    }
+    .utility > a{
+        font-size: 20px;
+    }
+  }
+  /* navigation complete */
+
+  .hero{
+    width: 100%;
+    background-image: url(Group_1_d4369b6d-0a82-42f3-aba3-d35afecf87ec.webp);
+  }

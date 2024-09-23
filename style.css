@@ -91,10 +91,64 @@ ul > li > a:hover,
   object-position: center;
 }
 .quote {
-  width: 50vw;
-  margin: 5% auto;
+  width: 100%;
+  margin: 5% auto 2% auto;
   font-size: 1.8vw;
   text-align-last: center;
+}
+.line {
+  width: 20%;
+  height: 2px;
+  background-color: #000;
+  margin: 0% auto 5% auto;
+}
+h1 {
+  margin: 0% auto 2% auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+.products {
+  width: 100%;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  padding: 3%;
+}
+.item {
+  /* width: 30vw; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.item > img {
+  /* width: 30vw; */
+  /* max-height: 60vh; */
+  border: 2px solid rgb(205, 202, 202);
+  object-fit: cover;
+  object-position: center;
+}
+.item > h3 {
+  font-size: 1.3vw;
+  margin: 4% 0;
+}
+.item > span{
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+.item > span > strike{
+    margin-left: 3%;
+}
+.item > button{
+    padding: 1vw;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 3%;
 }
 
 
@@ -102,17 +156,29 @@ ul > li > a:hover,
 
 
 
-@media screen and (max-width: 600px) {
-    .hamburger {
-      display: inline;
-    }
-    .logo {
-      font-size: 20px;
-    }
-    ul {
-      display: none;
-    }
-    .utility > a {
-      font-size: 20px;
-    }
+
+@media screen and (max-width: 678px) {
+  .hamburger {
+    display: inline;
   }
+  .logo {
+    font-size: 20px;
+  }
+  ul {
+    display: none;
+  }
+  .utility > a {
+    font-size: 20px;
+  }
+  .quote {
+    font-size: 12px;
+  }
+  .products{
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .item > h3, .item > span{
+    font-size: 14px;
+  }
+  
+}

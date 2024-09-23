@@ -202,6 +202,12 @@ h1 {
     margin-top: 3%;
     text-align: center;
 }
+.signUp{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    margin: auto;
+}
 
 
 
@@ -210,7 +216,7 @@ h1 {
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   .hamburger {
     display: inline;
   }

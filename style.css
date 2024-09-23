@@ -90,6 +90,12 @@ ul > li > a:hover,
   object-fit: cover;
   object-position: center;
 }
+.hero > .mobilePic {
+  width: 100%;
+  display: none;
+  object-fit: cover;
+  object-position: center;
+}
 .quote {
   width: 100%;
   margin: 5% auto 2% auto;
@@ -133,111 +139,109 @@ h1 {
   font-size: 1.3vw;
   margin: 4% 0;
 }
-.item > span{
-    font-size: 1.2vw;
-    font-weight: 600;
+.item > span {
+  font-size: 1.2vw;
+  font-weight: 600;
 }
-.item > span > strike{
-    margin-left: 3%;
+.item > span > strike {
+  margin-left: 3%;
 }
-.item > button{
-    padding: 1vw;
-    border-radius: 10px;
-    background-color: #000;
-    color: #fff;
-    font-size: 1.2vw;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 3%;
-    cursor: pointer;
+.item > button {
+  padding: 1vw;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 3%;
+  cursor: pointer;
 }
-.storySection{
-    width: 90vw;
-    margin: 5% auto;
-    background-image: url(images/Shanaya_30ml_02_1.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-radius: 20px;
-    overflow: hidden;
+.storySection {
+  width: 90vw;
+  margin: 5% auto;
+  background-image: url(images/Shanaya_30ml_02_1.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 20px;
+  overflow: hidden;
 }
-.storySection_content{
-    width: 100%;
-    padding: 10%;
-    background-color: #00000080;
-    color: #fff;
+.storySection_content {
+  width: 100%;
+  padding: 10%;
+  background-color: #00000080;
+  color: #fff;
 }
-.storySection_content > h1{
-    font-size: 25px;
+.storySection_content > h1 {
+  font-size: 25px;
 }
-.services{
-    width: 100%;
-    margin: 5% auto;
-    padding: 2%;
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
+.services {
+  width: 100%;
+  margin: 5% auto;
+  padding: 2%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.servicesBoxes{
-    width: 33vw;
-    display: flex;
-    padding: 3%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-right: 2px solid #5d2d2d84;
+.servicesBoxes {
+  width: 33vw;
+  display: flex;
+  padding: 3%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #5d2d2d84;
 }
-.servicesBoxes > i{
-    font-size: 5vw;
-    color: #ab9373;;
+.servicesBoxes > i {
+  font-size: 5vw;
+  color: #ab9373;
 }
-.servicesBoxes:nth-child(3){
-    border: none;
+.servicesBoxes:nth-child(3) {
+  border: none;
 }
-.servicesBoxes > span{
-    margin-top: 3%;
-    text-align: center;
+.servicesBoxes > span {
+  margin-top: 3%;
+  text-align: center;
 }
-.signUp{
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    margin: auto;
+.signUp {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  margin: auto;
 }
-
-
-
-
-
-
-
 
 @media screen and (max-width: 1100px) {
   .hamburger {
-    display: inline;
+    display: block;
+    font-size: 24px;
   }
   .logo {
-    font-size: 20px;
+    font-size: 35px;
   }
   ul {
     display: none;
   }
   .utility > a {
-    font-size: 20px;
+    font-size: 24px;
+  }
+  .hero > img{
+    display: none;
+  }
+  .hero > .mobilePic{
+    display: block;
   }
   .quote {
     font-size: 12px;
   }
-  .products{
+  .products {
     grid-template-columns: repeat(2, 1fr);
-    
   }
-  .item > h3, .item > span{
+  .item > h3,
+  .item > span {
     font-size: 14px;
   }
-  
 }

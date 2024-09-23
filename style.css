@@ -61,7 +61,7 @@ ul > li > a {
 }
 ul > li > a:hover,
 .utility > a:hover {
-  color: rgb(171, 147, 115);
+  color: #ab9373;
 }
 .utility {
   display: flex;
@@ -149,6 +149,58 @@ h1 {
     font-weight: 600;
     text-transform: uppercase;
     margin: 3%;
+    cursor: pointer;
+}
+.storySection{
+    width: 90vw;
+    margin: 5% auto;
+    background-image: url(images/Shanaya_30ml_02_1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.storySection_content{
+    width: 100%;
+    padding: 10%;
+    background-color: #00000080;
+    color: #fff;
+}
+.storySection_content > h1{
+    font-size: 25px;
+}
+.services{
+    width: 100%;
+    margin: 5% auto;
+    padding: 2%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.servicesBoxes{
+    width: 33vw;
+    display: flex;
+    padding: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #5d2d2d84;
+}
+.servicesBoxes > i{
+    font-size: 5vw;
+    color: #ab9373;;
+}
+.servicesBoxes:nth-child(3){
+    border: none;
+}
+.servicesBoxes > span{
+    margin-top: 3%;
+    text-align: center;
 }
 
 
@@ -158,7 +210,7 @@ h1 {
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .hamburger {
     display: inline;
   }

@@ -350,7 +350,7 @@ footer {
 @media screen and (max-width: 1100px) {
   .hamburger {
     display: block;
-    font-size: 24px;
+    font-size: 34px;
   }
   .logo {
     font-size: 45px;
@@ -359,7 +359,7 @@ footer {
     display: none;
   }
   .utility > a {
-    font-size: 24px;
+    font-size: 30px;
   }
   .hero > img {
     display: none;

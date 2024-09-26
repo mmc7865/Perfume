@@ -28,6 +28,10 @@ nav {
   box-shadow: 0 0 10px #00000080;
   background-color: #ffffff;
 }
+nav .active{
+  font-weight: 900 !important;
+  color: #ab9373 !important;
+}
 .hamburger {
   display: none;
   font-size: 24px;
@@ -109,7 +113,7 @@ ul > li > a:hover,
   margin: 0% auto 5% auto;
 }
 h1 {
-  margin: 0% auto 2% auto;
+  margin: 2% auto 2% auto;
   text-transform: uppercase;
   text-align: center;
 }
@@ -346,71 +350,8 @@ footer {
   text-transform: uppercase;
 }
 
-/* ------------------------------------media querry--------------------------------------- */
-@media screen and (max-width: 1100px) {
-  .hamburger {
-    display: block;
-    font-size: 34px;
-  }
-  .logo {
-    font-size: 45px;
-  }
-  ul {
-    display: none;
-  }
-  .utility > a {
-    font-size: 30px;
-  }
-  .hero > img {
-    display: none;
-  }
-  .hero > .mobilePic {
-    display: block;
-  }
-  .quote {
-    font-size: 15px;
-  }
-  .products {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .item > h3,
-  .item > span,
-  .item > button {
-    font-size: 20px;
-  }
-  .follow_contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-  }
-  .follow_contact h3 {
-    font-size: 25px;
-    font-weight: 600;
-    color: #ab9373;
-  }
-  .follow_contact > .contact,
-  .follow_contact > .follow {
-    border-left: none;
-    margin-top: 0;
-    width: 100%;
-    padding-bottom: 2%;
-  }
-  .follow_contact > .follow > .important_links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-  .follow_contact > .follow > .important_links > a {
-    font-size: 20px;
-  }
-  .follow_contact > .contact {
-    gap: 20px;
-  }
-  .follow_contact > .contact > p{
-    font-size: 20px;
-  }
+/* ---------------------------------------new arrivals----------------------------------------------------- */
+
+.arrival {
+  
 }

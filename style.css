@@ -32,7 +32,7 @@ nav .active{
   font-weight: 900 !important;
   color: #ab9373 !important;
 }
-.hamburger {
+.menu,.close {
   display: none;
   font-size: 24px;
 }
@@ -82,6 +82,32 @@ ul > li > a:hover,
 
 /* navigation complete */
 
+.nav-pills{
+  position: absolute;
+  background-color: #00000080;
+  top: 65px;
+  left: -200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 20px;
+  transition: all 0.5s;
+}
+.nav-pills li{
+  list-style: none;
+}
+.nav-pills li a{
+  text-decoration: none;
+  color: #fff;
+}
+.nav-pills li a:hover{
+  color: #ab9373; 
+}
 .hero {
   margin: auto;
   width: 100%;

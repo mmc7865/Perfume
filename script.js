@@ -1,8 +1,14 @@
-const hamburger = document.querySelector('.hamburger');
-const navbar = document.querySelector('.navbar');
-hamburger.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const input = document.querySelector("input");
-    ul.innerHTML += `<li>${input.value}</li>`;
-    input.value ="";
+const close = document.querySelector(".close");
+const nav = document.querySelector(".nav-pills");
+const menu = document.querySelector(".menu");
+
+menu.addEventListener("click", () => {
+   menu.style.display = "none";
+   nav.style.left = "0px";
+   close.style.display = "initial";
 });
+close.addEventListener("click", () => {
+    menu.style.display = "initial";
+    nav.style.left = "-200px";
+    close.style.display = "none";
+ });

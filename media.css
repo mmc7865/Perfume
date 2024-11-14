@@ -5,16 +5,16 @@
 @media screen and (max-width: 678px) {
     .hamburger {
       display: block;
-      font-size: 34px;
+      font-size: 30px;
     }
     .logo {
-      font-size: 45px;
+      font-size: 20px;
     }
     ul {
       display: none;
     }
     .utility > a {
-      font-size: 30px;
+      font-size: 20px;
     }
     .hero > img {
       display: none;
@@ -23,7 +23,7 @@
       display: block;
     }
     .quote {
-      font-size: 15px;
+      font-size: 13px;
     }
     .products {
       grid-template-columns: repeat(2, 1fr);
@@ -31,7 +31,7 @@
     .item > h3,
     .item > span,
     .item > button {
-      font-size: 20px;
+      font-size: 14px;
     }
     .follow_contact {
       display: flex;
@@ -47,11 +47,18 @@
     }
     .follow_contact > .contact,
     .follow_contact > .follow {
+      display: flex;
+      gap: 20px;
       border-left: none;
       margin-top: 0;
       width: 100%;
       padding-bottom: 2%;
     }
+    /* .follow_contact > .follow > .social_links a{
+      height: 40px;
+      width: 40px;
+      text-align: center;
+    } */
     .follow_contact > .follow > .important_links {
       display: flex;
       flex-direction: column;
@@ -60,13 +67,43 @@
       gap: 15px;
     }
     .follow_contact > .follow > .important_links > a {
-      font-size: 20px;
+      font-size: 16px;
     }
     .follow_contact > .contact {
       gap: 20px;
     }
     .follow_contact > .contact > p{
+      font-size: 16px;
+    }
+    .storySection_content h1{
       font-size: 20px;
+    }
+    .storySection_content p{
+      font-size: 13px;
+    }
+    .servicesBoxes > h3{
+      font-size: 15px;
+      text-align: center;
+    }
+    .servicesBoxes > span{
+      font-size: 11px;
+    }
+    .signUp{
+      width: 80%;
+      margin: 10% auto 10% auto;
+    }
+    .signUp input{
+      width: 100%;
+    }
+    .follow h3, .contact h3{
+      font-size: 20px;
+    }
+    .copyright{
+      margin-bottom: 2%;
+    }
+    .copyright h3{
+      font-size: 12px;
+      letter-spacing: 0px;
     }
   }
   
